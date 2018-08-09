@@ -57,7 +57,11 @@
                 </div>
                 <div class="col-12 col-sm align-self-center">
                 <!--Bootstrap block button-->
-                    <a href="./index.html#reserveform" style="text-decoration: none;" class="btn  btn-block btn-sm bg-warning mt-5 ">Reserve Table</a>
+                    <a  role="button" class="btn  btn-block nav-link btn-sm bg-warning mt-5 "style="text-decoration: none; color: white; font-weight: bold;" 
+                         data-toggle="tooltip" data-html="true"
+                         title="Or Call us at <br><strong>+852 12345678</strong>"
+                         data-placement="bottom" href="./index.html#reserveform" >Reserve Table
+                    </a>
                 </div>
             </div>
         </div>
@@ -231,6 +235,13 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!--Added jquery code for functionality of Tooltips-->
+    <script>
+         $(document).ready(function() {
+             $('[data-toggle="tooltip"]').tooltip();
+         })
+    </script>
 
 </body>
 
