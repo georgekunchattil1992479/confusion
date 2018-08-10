@@ -114,6 +114,74 @@
     </header>
 
     <div class="container">
+        <!--Carousels: Bootstrap image slider-->
+        <div class="row row-content">
+            <div class="col">
+                <!--Adding Carousel-->
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+
+                    <!--Adding Carousel Content-->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <!--Addded image in Carousel item. img-fluid class makes image to be responsive-->
+                            <img class="d-block img-fluid" src="img/uthappizza.png" alt="uthappizza">
+
+                            <!--Added Text to image with the help of Carousel. carousel-caption class help to add text with image-->
+                            <div class="carousel-caption d-none d-md-block">
+                                    <h2>Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2> <!--mt-> Margin top-->
+                                    <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p> <!--d-sm-block -> Bootstrap classes which help to hide contents in small screen in mobile phones-->                     
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                             <!--Addded image in Carousel item. img-fluid class makes image to be responsive-->
+                            <img class="d-block img-fluid" src="img/buffet.png" alt="buffet">
+
+                            <!--Added Text to image with the help of Carousel. carousel-caption class help to add text with image-->
+                            <div class="carousel-caption d-none d-md-block">
+                                    <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                                    <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p> 
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!--Addded image in Carousel item. img-fluid class makes image to be responsive-->
+                            <img class="d-block img-fluid" src="img/alberto.png" alt="uthappizza">
+
+                            <!--Added Text to image with the help of Carousel. carousel-caption class help to add text with image-->
+                            <div class="carousel-caption d-none d-md-block">
+                                   <h2>Alberto Somayya</h2>
+                                   <h4>Executive Chef</h4>
+                                   <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--Adding Carousel Controls-->
+                    <ol class="carousel-indicators">  <!--carousels-indicators -> helps to indicate and higlight current Bootstrap Carousel Sliders with indicators.-->
+                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                        <li data-target="#mycarousel" data-slide-to="2"></li>
+                    </ol>
+
+                <!--Add couple of controls Carousel slider manually-->
+                
+                    <!--carousel-control-prev -> Previous arrow is used in order to go back to previous slide
+                            carousel-control-prev-icon -> previous arrow icon-->
+                    <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+
+                    <!--carousel-control-next -> Next arrow is used in order to go back to next slide
+                            carousel-control-next-icon -> next arrow icon-->
+                    <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
