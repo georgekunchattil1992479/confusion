@@ -10,7 +10,7 @@
     min-height: 400px;
 }
 
-/*Style <footer> tag*/
+/* Style <footer> tag*/
 
 .footer{
     background-color: #D1C4E9;
@@ -20,6 +20,8 @@
 
 /*******/
 
+/* Style  jumbotron class******/
+
 .jumbotron{
     padding: 70px 30px 70px 30px;
     margin: 0px auto;
@@ -27,13 +29,15 @@
     color: floralwhite;
 }
 
+/****************************/
+
 .address{
     font-size: 80%;
     margin: 0px;
     color: #0f0f0f;
 }
 
-/*Style <body> tag*/
+/* Style <body> tag*/
 
 body{
     padding: 50px 0px 0px 0px;
@@ -42,7 +46,7 @@ body{
 
 /*****************/
 
-/*Style navbar*/
+/* Style navbar*/
 
 .navbar-dark{
     background-color: #512DA8;
@@ -57,7 +61,7 @@ body{
     padding: 10px;
 }
 
-/*Style to Carousel*/
+/* Style to Carousel*/
 
 .carousel{
     background: #512DA8;
