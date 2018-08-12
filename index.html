@@ -383,9 +383,35 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!--Added jquery code for functionality of Tooltips-->
-    <script>
-         $(document).ready(function() {
-             $('[data-toggle="tooltip"]').tooltip();
+    <script>                           
+         $(document).ready(function() { //$(document)-> document means entire document of the page, Similar to this, we can use "p", "button", etc.
+                                         //ready-> means action to be taken, function()-> execute functionalities inside that function
+                                        // ready(), click(), dblclick(), mousedown(), hide() on() are JQuery Methods
+                                        // We can also use #idname for using html elements with id in jQuery. Similar to this, we can use ".btn", "btn.btn-default" for class
+             $('[data-toggle="tooltip"]').tooltip(); //enable the functionality of Tooltip with the help of data-toggle class. 
+                                                     //"[data-toggle="tooltip"]", "[href]" are JQuery Attribute
+                                                     //$(this)-> jquery used to indicate current element
+
+                                //jquery helps to do user interaction events such as mouse events (eg: click, dbclick, mouseenter), Keyboard events(eg: keypress, keydown, keyup), form (eg: submit, change, focus, blur), Document, Window(eg: load, resize, scroll, unload)
+                                
+                                /*Data Attributes of Bootstrap Carousel
+                                    Data attributes of Bootstrap Carousel are data-slide="prev|next", 
+                                                                           data-slide-to="0|1|2|..", 
+                                                                           data-ride="carousel", 
+                                                                           data-interval=5000 
+                                    eg: $('.carousel). carousel({interval:2000}); //interval:2000 -> 2 milli seconds=2sec
+                                 Carousel Controls: .carousel('cycle): cycle items left to right
+                                                    .carousel('pause'): stops the carousel
+                                                    .carousel(number): cycles the carousel to a particular frame number specified
+                                                    .carousel('prev'): previous item
+                                                    .carousel('next'): next item
+                                 Carousel events: slide.bs.carousel: fires when slide instance method is invoked
+                                                  slide.bs.carousel: fired when the carousel has completed its slides transition
+                                            With the help of .on() method, we can use carousel events
+                                                    eg: $("#myCarousel").on('slide.bs.carousel', function(){
+                                                                //do something 
+                                                        })
+                                 */
          })
     </script>
 
