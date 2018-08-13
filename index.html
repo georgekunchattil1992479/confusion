@@ -284,15 +284,20 @@
                     </a>
 
                     <!--Adding the Carousel Control Buttons-->
-                    <div class="btn-group" id="carouselButton">
-                        <button class="btn btn-danger btn-sm" id="carousel-play">
-                            <span class="fa fa-play"></span>
-                        </button>
-                        <button class="btn btn-danger btn-sm" id="carousel-pause">
+                      <!-- Carousel Control with two buttons such as Play and Pause button
+                        <div class="btn-group" id="carouselButton">
+                            <button class="btn btn-danger btn-sm" id="carousel-play">
+                                <span class="fa fa-play"></span>
+                            </button>
+                            <button class="btn btn-danger btn-sm" id="carousel-pause">
+                                <span class="fa fa-pause"></span>
+                            </button> 
+                        </div>
+                       -->
+
+                       <button class="btn btn-danger btn-sm" id="carouselButton">
                             <span class="fa fa-pause"></span>
-                        </button>
-                        
-                    </div>
+                        </button> 
 
                 </div>
             </div>
@@ -468,8 +473,9 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!--Added JQuery code for controlling Play/Pause Carousel button-->
-    <script>
-        $(document).ready(function(){
+      <!-- Add jQuery code to control two buttons i.e Play button and Pause button
+        <script>
+          $(document).ready(function(){
             $('#mycarousel').carousel({interval: 2000})
             $('#carousel-pause').click(function(){
                 $('#mycarousel').carousel('pause');
@@ -477,8 +483,35 @@
             $('#carousel-play').click(function(){
                 $('#mycarousel').carousel('cycle');
             });
+          });
+        </script> 
+      ***************************************************************-->
+
+     <!--Toggle Play/Pause button-->
+     <script>
+        $(document).ready(function(){
+            $('#mycarousel').carousel({interval: 2000});
+            $('#carouselButton').click(function(){
+
+                //Toggle from Pause button to Play button
+                if($('#carouselButton').children('span').hasClass('fa-pause')){
+                    $('#mycarousel').carousel('pause'); //Pause the Carousel
+                    $('#carouselButton').children('span').removeClass('fa-pause'); //Remove Pause icon
+                    $('#carouselButton').children('span').addClass('fa-play'); //Add Play icon by replacing Pause icon
+                }
+
+                //Toggle from Play button to Pause button
+                else
+                {
+                    $('#mycarousel').carousel('cycle'); //Play the Carousel
+                    $('#carouselButton').children('span').removeClass('fa-play'); //Remove Play icon
+                    $('#carouselButton').children('span').addClass('fa-pause');  //Add Pause icon by replacing Play icon
+                }
+                
+            });
         });
-    </script>
+     </script>
+    <!--*************************-->
 
     <!--Added jquery code for functionality of Tooltips-->
     <script>                           
