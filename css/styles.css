@@ -63,3 +63,17 @@ Use of this npm dependency is to convert scss file and convert it into css file 
 /*In order to convert scc file --> css file, run the following command in command prompt
    npm run scss 
 */
+/*Assignment 4*/
+.modal-header {
+  background-color: #512DA8; }
+
+.modal-body {
+  background-color: #D1C4E9; }
+
+.modal-title {
+  color: floralwhite; }
+
+.close {
+  color: floralwhite;
+}
+/*************/
